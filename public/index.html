@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Post Finder</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pl-5 pr-5">
+
+    <center>
+        <h1>Post Finder</h1>
+    </center>
+    <form class="p-5">
+        <div class="form-group">
+            <label for="email">Adress ou numéro de téléphone du votre facebook :</label>
+            <input type="text" class="form-control" id="email" aria-describedby="emailHelp"
+                placeholder="Email ou Num°Tél">
+            <small id="emailHelp" class="form-text text-muted">Nous utilisons ces données de manière sécurisée et
+                confidentielle et ne sommes en aucun cas enregistrées ou réutilisées.</small>
+        </div>
+        <div class="form-group">
+            <label for="password">Mot de pass du votre facebook :</label>
+            <input type="password" class="form-control" id="password" placeholder="Mot de pass">
+        </div>
+        <div class="form-group">
+            <label for="accountUrl">Idetifiant du profile que vous voulez le chercher :</label>
+            <input type="text" class="form-control" id="accountUrl"
+                placeholder="ID de profile cible (Exemple: https://www.facebook.com/idDuProfile)">
+        </div>
+        <div class="form-group">
+            <label for="numberOfPosts">Nembre des posts dans le quel vous voulez chercher :</label>
+            <input type="number" class="form-control" id="numberOfPosts" placeholder="1..999">
+        </div>
+        <div class="form-group">
+            <label for="keyWords">Mots clées :</label>
+            <input type="text" class="form-control" id="keyWords">
+        </div>
+        <center>
+            <button id="btn" type="button" class="btn btn-primary">Démarrer la recherche</button>
+        </center>
+
+    </form>
+
+    <div id="posts-list">
+        <!--
+        <div class="card" style="width: 18rem;">
+            <img src="https://scontent.ftun2-1.fna.fbcdn.net/v/t15.5256-10/66798576_340191426905089_8458550674831966208_n.jpg?_nc_cat=107&_nc_oc=AQkZOlm44sYv8saL9bVnd2C0W4Pp9CRlK9EyxBpYEXVxL-xE8viJaFaePKwan3ZmzuA&_nc_ht=scontent.ftun2-1.fna&oh=48c65026eced5edb2844b1fa186f8586&oe=5DCADFB8"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"></p>
+                <a href="https://www.facebook.com/kz7898/posts/343400356593450" class="btn btn-primary" target='_blank'>Ouvrire dans Facebook</a>
+            </div>
+        </div>
+    -->
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
